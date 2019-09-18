@@ -1,5 +1,6 @@
 var score = 0;
-
+var message = ("get to 100")
+var message2 = ("you got to 100")
 postToPage(score); // Print to the page
 
 createButton('Button', btnPress); // Make a button
@@ -21,4 +22,10 @@ setInterval(btnPress2, 1000);
 function btnPress2() {
   score = score - 1;
   postToPage(score);
+}
+if(score < 100){
+  createText(message);
+}
+if(score > 100){
+  createText(message2);
 }
