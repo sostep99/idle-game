@@ -3,11 +3,7 @@ var message = ("get to 100")
 var message2 = ("you got to 100")
 postToPage(score); // Print to the page
 
-createButton('Button', btnPress); // Make a button
-changeTitle('Clicker Game');
-createText('Hello');
-
-setInterval(btnPress, 1000);
+setInterval(btnPress, 1000);   // Set up a loop
 
 function btnPress() {
   score = score + 2
