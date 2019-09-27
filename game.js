@@ -7,7 +7,7 @@ var tim = new Text('Timer: ' + timer)
 var button2 = new Button('enemy', btnPress2); // Make a button
 var button3 = new Button('timer', btnPress3);
 var text1   = new Text('You wake up in a dark room ' + 'In front of you is a button labled Souls, and next to it is a Soul counter it says you curently have 100 souls ' + 'Beyond the button is a dark tunnel ' + 'above the tunnel is timer slowly counting towards 0'); 
-var text2   = new Text('Suddenly from the darkness a monster suddenly jumps out and starts attacking the Soul counter ' + 'YOU LOSE SOULS FASTER');
+var text2   = new Text('text to change');
 var next = false
 var Golum = new Button('Golum: Cost 50 Souls, 1 Soul/sec', btnPress4);
 var Holly_water = new Button('Holly Water: Cost 180 Souls, 5 Soul/sec', btnPress5);
@@ -91,6 +91,7 @@ setInterval(btnPress2, 800);
 column2.add(text2);
 text2.show()
 text1.edit('a monster comes from the darkness')
+text2.edit('YOU LOSE SOULS EVEN FASTER!!')
 timer = timer + 30
   }
 }
